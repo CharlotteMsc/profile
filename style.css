@@ -1,0 +1,400 @@
+/* Color & Fonts */
+
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+/* Importing component files */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+
+body {         
+  background-color: F6F6F6; 
+  color: rgba(0,0,0,.90); 
+  font-family: Calibri, serif;
+  font-size: 20px;
+  line-height: 1.16;
+  font-weight: lighter;
+  margin: 0px auto
+}
+h1, h2, h3, h4 { 
+  font-family: Lucida, serif;
+  font-weight: lighter;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+h1 {  
+  color: rgba(0,0,0,.84); 
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+h2 {         
+  color: #041F47; 
+  font-weight: bold;
+  font-size: 26px;
+  text-align: left;
+}
+
+a {         
+  text-decoration: none;
+  color:#0089c9;
+  transition: color 0.3s ease;
+}
+a:hover { 
+  color:#1055EB;
+}
+p {         
+  text-justify: justify;
+  font-size: 14px;
+  color:#828d99;
+}
+
+/*div{
+	margin: 50px auto;
+    background: white;
+    padding: 60px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+*/
+
+img{
+    width: 100px;
+    border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom Design with class */
+
+#img-list {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.container {
+  width: 700px; /* set the width of your container */
+  margin: 10px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+}
+
+.page-content {
+  margin-left:200px;
+}
+
+.card-white{
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    flex-basis: 250px;
+    flex-grow: 1;
+    margin: 10px;
+}
+.card-white h3{
+    flex-grow:1;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  flex-basis: 250px;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.icon-bar {
+  background-color: #02132b;
+  overflow: hidden;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
+  align-items:center;
+}
+
+.img-circle{
+	border-radius: 50%;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-sidebar {
+  position: fixed;
+  width: 160px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  line-height: 50pt;
+  background-color: #02132b;
+  color: white;
+  justify-content: space-between;
+}
+
+.card-sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+ }
+
+ .card-sidebar a {
+  background-color: #02132b;
+  color: white;
+}
+
+.card-sidebar:hover {
+    color: #041f47;
+}
+
+.btn-black{
+ 	background-color: white;
+    color: #02132b;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #02132b;
+    border-width: 2px;
+    text-align: center;
+    font-size: 15px;
+    float: unset;
+}
+
+.btn-black:hover {
+ 	background-color: #02132b;
+    color: white;
+}
+
+.badge {
+	display: inline-block;
+	padding: 6px 12px;
+	border-radius: 50px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: 5px 10px 5px 0;
+	line-height: 1;
+}
+.office {
+    color: #771111;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #771111;
+    border-width: 2px;
+    text-align: center;
+}
+.dashboard {
+    color: #EAC117;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #EAC117;
+    border-width: 2px;
+    text-align: center;
+}
+.google {
+    color: #08684a;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #08684a;
+    border-width: 2px;
+    text-align: center;
+}
+
+.coding {
+    color: #133a6d;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color:  #133a6d;
+    border-width: 2px;
+    text-align: center;
+}
+
+.logo{
+    width: 80px;
+}
+
+.list-inline {
+  list-style: none; /* kill the bullet points */
+  padding-left: 0px; /* kill remaining padding left */
+}
+.list-inline li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 10px; /* add som left/right padding between list items */
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: #0089c9;
+}
+
+.list-inline i:hover {
+  color:#1055EB;
+}
+
+#introduction p {
+  margin-bottom: 40px;
+}
+
+#introduction img {
+  margin-bottom: 40px;
+}
+
+/* Media Query*/ 
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+div.bordure {
+border-bottom:1px solid white;
+}
+
+/* Banners */
+
+.banner {
+  /* 1. Set a background image - specify image to use as a div // filter = linear-gradiant*/
+  background-image: linear-gradient(-50deg, rgba(0,0,0, 0.1) 0%, rgba(0,0,0, 0.6) 50%), url(images/banner_blue.jpg);   
+  /* 2. Make the background image cover the banner div - cover =  will make the image cover the div */
+  linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 50%);
+  background-size: cover;     
+  /* 3. Center the image - center image exactly on center of the div */
+  background-position: center;
+  padding: 120px 0px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 50px;
+  text-align: left;
+  padding-left:0;
+  font-weight: bold;
+}
+.banner h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  padding-left:0;
+}
+
+.banner h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  padding-left:0;
+}
+
+/* Carrousel */
+
+.carousel {
+  position:relative;
+  width:400px;
+  border:10px solid white;
+  margin:20px auto;
+  box-shadow:0px 0px 40px #000;
+}
+.carousel > img {
+  display:none;
+  width:100%;
+}
+.carousel > input {
+  position:absolute;
+  left:-9999px;
+}
+.carousel > input:checked + label + img {
+  display:block;
+}
+
+.carousel > label,
+.carousel > input:checked ~ label ~ label ~ label ~ label {
+  display:none;
+}
+.carousel > input:checked + label {
+  display:block;
+  left:0;
+}
+.carousel > input:checked ~ label ~ label ~ label {
+  display:block;
+  right:0;
+}
+
+.carousel > label {
+  position:absolute;
+  top:0;
+  width:25%;
+  height:100%;
+  visibility:hidden;
+}
+.carousel > label:before {
+  content:'';
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  visibility:visible;
+}
+.carousel > label:after {
+  display:block;
+  position:absolute;
+  top:50%;
+  width:25px;
+  height:25px;
+  line-height:22px;
+  margin:-15px 10px 0 10px;
+  background-color:black;
+  color:white;
+  font-family:'Arial';
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+  visibility:hidden;
+  border:2px solid white;
+  border-radius:20px;
+  box-shadow:0 3px 4px black;
+}
+.carousel > label:hover:after {
+  visibility:visible;
+}
+
+.carousel > input:checked + label:after {
+  left:0;
+  content:'\00AB';
+}
+.carousel > input:checked ~ label ~ label ~ label:after {
+  right:0;
+  content:'\00BB';
+}
