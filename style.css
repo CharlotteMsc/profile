@@ -23,12 +23,14 @@ h1, h2, h3, h4 {
   flex-grow: 1;
   padding-left: 20px;
 }
+
 h1 {  
-  color: rgba(0,0,0,.84); 
-  font-size: 40px;
+  color: white; 
+  font-size: 60px;
   letter-spacing: 5px;
   text-align: center;
 }
+
 h2 {         
   color: #041F47; 
   font-weight: bold;
@@ -81,10 +83,6 @@ img{
   margin: 10px auto; /* set margins: top/bottom: 40px; left/right: automatic */
 }
 
-.page-content {
-  margin-left:200px;
-}
-
 .card-white{
     background-color: white;
     padding: 20px;
@@ -125,25 +123,14 @@ img{
   align-items:center;
 }
 
-.img-circle{
-	border-radius: 50%;
-    width: 180px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .card-sidebar {
-  position: fixed;
-  width: 160px;
-  left: 0;
+  position: absolute;
+  width: 100%;
   top: 0;
-  bottom: 0;
-  margin: auto;
-  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
-  line-height: 50pt;
-  background-color: #02132b;
+  background-color: #020f21;
   color: white;
   justify-content: space-between;
 }
@@ -153,22 +140,30 @@ img{
   padding-left: 0px;
  }
 
- .card-sidebar a {
-  background-color: #02132b;
-  color: white;
+ .card-sidebar ul li {
+  display: inline;
+  text-align: center;
 }
 
-.card-sidebar:hover {
-    color: #041f47;
+ .card-sidebar a {
+  color: white;
+  padding-left: 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+ .card-sidebar a:hover {
+  color: #687aa0;
+  /*border-bottom:1px solid #bcbcbc;*/
 }
 
 .btn-black{
  	background-color: white;
-    color: #02132b;
+    color: #020f21;
     padding: 15px 20px;
     border-radius: 5px;
     border-style: solid;
-    border-color: #02132b;
+    border-color: #020f21;
     border-width: 2px;
     text-align: center;
     font-size: 15px;
@@ -176,7 +171,7 @@ img{
 }
 
 .btn-black:hover {
- 	background-color: #02132b;
+ 	background-color: #020f21;
     color: white;
 }
 
@@ -249,14 +244,6 @@ img{
   color:#1055EB;
 }
 
-#introduction p {
-  margin-bottom: 40px;
-}
-
-#introduction img {
-  margin-bottom: 40px;
-}
-
 /* Media Query*/ 
 
 @media (max-width: 960px) {
@@ -292,12 +279,14 @@ border-bottom:1px solid white;
   background-size: cover;     
   /* 3. Center the image - center image exactly on center of the div */
   background-position: center;
-  padding: 120px 0px;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
 }
 
 .banner h1 {
   color: white;
-  font-size: 50px;
+  font-size: 60px;
   text-align: left;
   padding-left:0;
   font-weight: bold;
